@@ -9,5 +9,5 @@ public interface Controller {
     void anonymousClassCommand(String arg);
 
     void objectCommand(String arg);
-    
+
 }

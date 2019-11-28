@@ -1,16 +1,16 @@
 package com.epam.pattern_command.model;
 
-public class Print implements Command {
+public class ReceiverCommand implements Command {
 
     private Receiver receiver;
 
-    public Print(Receiver receiver) {
+    public ReceiverCommand(Receiver receiver) {
         this.receiver = receiver;
     }
 
     @Override
     public void execute(String arg) {
-        receiver.Print(arg);
+        receiver.print(arg);
     }
 
 }

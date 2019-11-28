@@ -14,9 +14,7 @@ public class Main {
             }
         };
 
-        MyFuncInterface averageLambda = (a, b, c) -> {
-            return (a + b + c) / 3;
-        };
+        MyFuncInterface averageLambda = (a, b, c) -> (a + b + c) / 3;
 
         System.out.println(maxLambda.method(10, 20, 30));
         System.out.println(maxLambda.method(30, 100, 20));

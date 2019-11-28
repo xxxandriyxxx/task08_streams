@@ -1,5 +1,6 @@
 package com.epam.pattern_command.model;
 
+//client - according to the pattern Command
 public class BusinessLogic implements Model {
 
     private Receiver receiver = new Receiver();

@@ -1,4 +1,4 @@
-package com.epam.stream;
+package com.epam.stream_list;
 
 import java.util.*;
 import java.util.stream.Collectors;

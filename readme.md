@@ -10,7 +10,7 @@ Invoke thous lambdas.
 string argument. You should implement 4 commands with next ways: command as lambda function, 
 as method reference, as anonymous class, as object of command class. User enters command name 
 and argument into console, your app invokes corresponding command.
-####in process
+####done
 3. Create a few methods that returns list (or array) of random integers. Methods should use 
 streams API and should be implemented using different Streams generators.
 - Count average, min, max, sum of list values. Try to count sum using both reduce and sum Stream methods

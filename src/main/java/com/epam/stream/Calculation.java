@@ -13,6 +13,10 @@ public class Calculation {
 //        return Collections.max(list);
         return list.stream().max(Integer::compare).get();
     }
-
     
+    public static int getSum(List<Integer> list) {
+        return list.stream()
+                .reduce(0, Integer::sum);
+    }
+
 }

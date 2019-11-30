@@ -13,10 +13,16 @@ public class Calculation {
 //        return Collections.max(list);
         return list.stream().max(Integer::compare).get();
     }
-    
+
+    public static float getAverage(List<Integer> list) {
+        return (float) getSum(list) / list.size();
+    }
+
     public static int getSum(List<Integer> list) {
         return list.stream()
                 .reduce(0, Integer::sum);
     }
+
+    
 
 }

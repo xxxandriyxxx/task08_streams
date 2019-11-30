@@ -20,18 +20,18 @@ public class StreamOperation {
                 .collect(Collectors.toList());
     }
 
-    static Map<String, Long> getNumberOfWords(List<String> list) {
+    static Map<String, Long> getNumOfWords(List<String> list) {
         return list.stream()
                 .collect(Collectors.groupingBy(value -> value, Collectors.counting()));
     }
 
-    static Map<String, Long> getNumberOfSymbols(List<String> list) {
+    static Map<String, Long> getNumOfSymbols(List<String> list) {
         List<String> symbolList = getSymbolList(list);
         return symbolList.stream()
                 .collect(Collectors.groupingBy(value -> value, Collectors.counting()));
     }
 
-    static List<String> getSymbolList(List<String> list) {
+    private static List<String> getSymbolList(List<String> list) {
         return list.stream()
                 .flatMap(e -> Stream.of(e.split("")))
                 .collect(Collectors.toList());

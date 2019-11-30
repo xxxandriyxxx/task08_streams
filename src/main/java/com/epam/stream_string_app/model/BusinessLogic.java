@@ -16,12 +16,12 @@ public class BusinessLogic implements Model {
     }
 
     @Override
-    public Map<String, Long> getNumberOfWords(List<String> list) {
-        return StreamOperation.getNumberOfWords(list);
+    public Map<String, Long> getNumOfWords(List<String> list) {
+        return StreamOperation.getNumOfWords(list);
     }
 
     @Override
-    public Map<String, Long> getNumberOfSymbols(List<String> list) {
-        return StreamOperation.getNumberOfSymbols(list);
+    public Map<String, Long> getNumOfSymbols(List<String> list) {
+        return StreamOperation.getNumOfSymbols(list);
     }
 }

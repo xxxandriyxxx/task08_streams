@@ -9,8 +9,8 @@ public interface Model {
 
     List<String> getSortedListOfUnique(List<String> list);
 
-    Map<String, Long> getNumberOfWords(List<String> list);
+    Map<String, Long> getNumOfWords(List<String> list);
 
-    Map<String, Long> getNumberOfSymbols(List<String> list);
+    Map<String, Long> getNumOfSymbols(List<String> list);
 
 }

@@ -29,5 +29,5 @@ public class Calculation {
                 .filter(value -> value > average)
                 .count();
     }
-    
+
 }

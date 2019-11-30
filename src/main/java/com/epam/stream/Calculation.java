@@ -23,6 +23,11 @@ public class Calculation {
                 .reduce(0, Integer::sum);
     }
 
+    public static long countBiggerAverage(List<Integer> list) {
+        float average = getAverage(list);
+        return list.stream()
+                .filter(value -> value > average)
+                .count();
+    }
     
-
 }
